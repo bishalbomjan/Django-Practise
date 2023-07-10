@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block title %}form creation
+{% endblock %}
+{% block container %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit"/>
+</form>
+{% endblock %}
